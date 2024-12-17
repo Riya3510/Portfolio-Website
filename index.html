@@ -1,0 +1,137 @@
+ <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Gandhi - Web Developer, Programmer, ML Enthusiast </title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id ="toggle"></div>
+    <div id="sidebar">
+
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href ="/intro.html">About</a></li>
+        <li><a href ="/skill.html">Skills</a></li>
+        <li><a href ="/projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        </ul>
+        
+        </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar')
+
+        document.onclick = function(e){
+if(e.target.id !== 'sidebar' && e.target.id !=='toggle')
+{
+    toggle.classList.remove('active');
+    sidebar.classList.remove('active');
+
+}
+        }
+    
+        
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+        </script>
+
+        
+
+<div class="main">
+    <div class ="infoContainer">
+        <div class ="devInfo">
+            <div class = "hello"> Hi I am </div>
+        <div class = "name">Riya</div>
+<div class = "about">Front End Developer, Full Stack Developer</div>
+<div class = "moreabout"> I am a Passionate Full Stack Developer, I like to keep myself updated with trending technologies and I love to Dance</div>
+<div class = "buttons">
+    <a href ="/cv.text" target="_blank">
+    <button class="btn"> Download Resume</button></a>
+   <a href = "/contact.html"><button class ="btn">Contact me</button></a>
+</div></div>
+     <div class ="devpic"><img src ="vi.png" alt="Riya"></div>
+        
+            
+        </div>
+      </div>  
+    
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+   
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="toggle"></div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="intro.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="infoContainer">
+            <div class="devInfo">
+                <div class="hello">Hi I am</div>
+                <div class="name">Riya</div>
+                <div class="about">Full Stack Developer</div>
+                    
+                  
+                    
+                    
+                <div class="moreabout">
+                    I am a Passionate Full Stack Developer, I like to keep myself updated with trending technologies and I love to Dance.
+                </div>
+                <div class="buttons"> 
+                    <a href="https://drive.google.com/file/d/1B2Ifrx90GAEgO8EjK1qKfUKOehpLrr5d/view?usp=sharing" target="_blank">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="contact.html">
+                        <button class="btn">Contact me</button>
+                    </a>
+                </div>
+            </div>
+            <div class="devpic">
+                <img src="Riya.jpeg" alt="Riya" class ="prerna"  >
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e) {
+            if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Gandhi - Web Developer, Programmer, ML Enthusiast </title>
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="toggle"></div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="intro.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e) {
+            if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+        
+
+            <div class = "box">
+         
+<div class ="aero">
+
+    <article>
+
+        <h1><center> About Me</center></h1>
+        <img src ="Riuu.jpeg" class ="vk">
+
+        <content>
+
+          I am a passionate Full Stack Developer who graduated in 2024 with a degree in CSE branch
+        I enjoy creating dynamic web applications and continuously expanding my technical skill
+    Outside of coding, I love dancing and painting, which fuel my creativity and balance my professional life
+I'm always eager to learn new technologies and take on new challenges to grow as a developer
+    </content>
+        <h5><center>Riya</center> </h5>
+        <p><h3><!--</h3>--><center>Coder,Dancer, Painter</center></h3></p>
+
+        <div class="social-links" style="text-align: center; margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/riya-749966200/" target="_blank" style="margin: 0 10px; font-size: 50px; color: #0e76a8;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <a href="https://github.com/Riya3510" target="_blank" style="margin: 0 10px; font-size: 50px; color: #333;">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </article>
+</div>
+</div>
+</body>
+</html>

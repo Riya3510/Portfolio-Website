@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Gandhi - Web Developer, Programmer, ML Enthusiast </title>
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="toggle"></div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="intro.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e) {
+            if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+
+        function flipCard(card) {
+    card.classList.toggle('flipped');
+  }
+    </script>
+
+    <div class ="training-section">
+        <h1>PROJECTS</h1>
+        <div class = "container">
+
+            <div class = "training-items" onclick="flipCard(this)">
+                <div class="card-inner">
+                     <div class="card-front">
+                    
+                
+                <img src ="php.jpg">
+                <h3>Lost & Found</h3>
+                </div>
+              <div class ="card-back">
+                <p>
+                    Created a website where users can post lost or found items.
+                    Enhanced the performance and responsiveness of the portal
+                    by optimizing database queries and indexing.
+                    Made it easier for people to find their lost items by using
+                    security measures like input check.
+                    Implemented secure user registration and login
+                    functionality, enhancing the overall user experience.
+
+                </p>
+                </div>
+                </div>
+                </div>
+
+                <!--<button>Read More</button>-->
+        
+            
+            <div class = "training-items"  onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                <img src ="java.png">
+                <h3>Atm Interface</h3>
+                </div>
+                <div class ="card-back">
+                <p>
+                    Developed Console based Application .When the system starts ,the
+                    user is prompted with user id and user pin. On entering the details
+                    successfully, then ATM functionalities are unlocked.
+                    Enhanced the user experience by developing features like
+                    transaction history review, withdrawals, deposits, transfers, and a
+                    quit function.
+
+                </p>
+                </div>div
+</div>
+                <!--<button>Read More</button>-->
+
+            </div>
+            <div class = "training-items"  onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                <img src ="web.jpg">
+                <h3>E-Commerce Website</h3>
+                </div>
+                <div class ="card-back">
+                <p>
+                    Designed and developed a dynamic Footwear commercial
+                    website from scratch using HTML, CSS, and JavaScript
+                    Developed secure login and registration system
+                    Improved loading times by optimizing images, that led to
+                    increase in website traffic .
+                    Developed a visually appealing website through strategic
+                    use of design elements and interactive features, resulting in
+                    increased user engagement.
+
+                </p>
+                </div>
+                </div>
+
+              <!----<button>Read More</button>-->
+
+            </div>
+            <div class = "training-items"  onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                <img src ="web.jpg">
+                <h3>Portfolio Website</h3>
+                </div>
+                <div class ="card-back">
+                <p>
+                    My portfolio website showcases my skills, projects, and experience with sections for Home, About, Skills, Projects, and Contact. It offers a clean, responsive design that ensures a smooth user experience across all devices.
+
+                </p>
+                </div>
+                </div>
+
+                <!--<button>Read More</button>-->
+
+            </div>
+            <div class = "training-items"  onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                <img src ="robo.jpg">
+                <h3>Movie Recommender System</h3>
+                    </div>
+                <div class ="card-back">
+                <p>
+                    Analyzed user preferences and genre tagging
+                    Developed content-based filtering algorithms using movie features
+                    like genres, directors, and actors to suggest similar movies.
+                    Successfully deployed a scalable and user-friendly web application
+                    using Heroku Deployment.
+
+                </p>
+
+              <!---- <button>Read More</button>-->
+</div>
+</div>
+            </div>
+            <div class = "training-items"  onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                <img src ="web.jpg">
+                <h3>Todo App</h3>
+                    </div>
+                <div class ="card-back">
+                <p>
+                    Developed a task management app using React.js, enabling users to
+                    add, edit, delete, and prioritize tasks.
+                    Implemented features for task completion status and task filtering
+                    (e.g., by status or priority).
+                    Ensured app responsiveness across devices, providing seamless
+                    performance on desktop and mobile.
+
+                </p>
+
+                <!--<button>Read More</button>-->
+
+            </div>
+        </div>
+    </div>
+

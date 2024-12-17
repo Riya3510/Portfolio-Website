@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Gandhi - Web Developer, Programmer, ML Enthusiast </title>
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="toggle"></div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="intro.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e) {
+            if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+        <!--<div class="container">
+            <div class="contactInfo">
+            <div class="box">
+            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class="text"><h3> Address</h3><p> Dhanbad , Jharkhand</p></div>
+            </div>
+            </div>
+
+            <div class = "box">
+                <div class ="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class ="text">
+                    <h3> Phone No</h3>
+                    <p> 9113100542</p>
+                </div>
+            </div>
+
+            
+                <div class ="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <div class ="text">
+                    <h3> Email</h3>
+                    <p> riya4office@gmail.com</p>
+                </div>
+            </div>
+
+           </div>
+           
+           <div class ="contactForm"> 
+
+            <form>
+                <h2> Send Message</h2>
+                <div class ="inputBox">
+                    <input type ="text" name="" required = "required">
+                    <span> Full Name</span>
+                </div>
+
+                <div class ="inputBox">
+                    <input type ="text" name="" required = "required">
+                    <span>Email</span>
+                </div>
+
+                <div class ="inputBox">
+                    <textarea required ="required"></textarea> 
+                    <span>Type your Message</span>
+                </div>
+                
+                <div class ="inputBox">
+                    <input type ="submit" name="" required = "send">
+            
+                </div>
+            </form>
+            
+
+    </div>
+      </div>  
+    </div>-->
+
+    <div class = "hero">
+        <form>
+            <div class ="row">
+<div class ="input-group">
+            <input type ="text" id="name" required>
+            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+        
+    </div>
+
+    <div class ="input-group">
+        <input type ="text" id="number" required>
+        <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+    
+</div>
+</div>
+<!--<div class ="input-group">
+    <textarea id ="me" rows="8"></textarea> 
+    <label for="message">Your Message</label>
+
+</div>-->
+
+
+<div class ="input-group">
+    <input type ="text" id="name" required>
+    <label for="email"> <i class="fa-solid fa-envelope"></i> Your email</label>
+
+</div>
+
+<div class ="input-group">
+    <textarea id ="me" rows="8" required></textarea> 
+    <label for="message"><i class="fas fa-comments"></i> Your Message</label>
+
+</div>
+
+<button type ="submit">SUBMIT <i class ="fas fa-paper-plane"></i></button>
+
+</form>
+</body>
+</html>
